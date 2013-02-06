@@ -1,5 +1,15 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>css/structure.css</name></action>
+
+            <action method="addItem"><type>skin_js</type><name>js/jquery-1.8.3.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery-ui-custom.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/global.js</name></action>
+        </reference>
+    </default>
+
     <catalog_category_default translate="label">
         <label>Catalog Category (Non-Anchor)</label>
         <reference name="content">
