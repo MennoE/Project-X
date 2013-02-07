@@ -38,12 +38,11 @@ var Initialize = function($) {
 		});
 
 		// to calculate the remaining width available for the selected, clicked tab
-		var combinedWidth = wrapperWidth - itemWidths;
+		var remainingWidth = wrapperWidth - itemWidths;
 
         // since we have to set a new width to the clicked tab we need to
         // add the remaining width to the width of one single tab
-        // temp --> var newWidth = singleWidth + combinedWidth;
-        var newWidth = 419;
+        var newWidth = singleWidth + remainingWidth - 2;
 
 		// make the hovered tab recognisable by using an 'active' class
 		// which can be used to styling and interaction purposes
@@ -63,14 +62,14 @@ var Initialize = function($) {
 	{
 		$(".products-grid").delegate('.item', 'click', function(){
             if($('.item').hasClass('expand')){
-                $(this).animate({
+                $('.item').animate({
                     width: resize(singleWidth)+'px'
                 }, 1000, function(){
                     $('.item').removeClass('expand');
                 });
             };
 
-            if(!$('.item').hasClass('expand')){
+            if(!$(this).hasClass('expand')){
                 $(this).animate({
                     width: resize(newWidth)+'px'
                 }, 1000, function(){
