@@ -1,5 +1,2 @@
-.wrapper { float: left; width: 700px; }
-
-.tab-wrapper { float: left; height: 250px; margin: 0; }
-.tab-wrapper li { float: left; width: 100px; min-height: 250px; margin: 0; padding: 0; border: 1px solid #696969; list-style-type: none; }
+.products-grid .item { float: left; width: 100px; min-height: 250px; margin: 0; padding: 0; list-style-type: none; }
 .active { background-color: #ccc; }
