@@ -1,2 +1,9 @@
-.products-grid .item { float: left; width: 100px; min-height: 250px; margin: 0; padding: 0; list-style-type: none; }
+.products-grid .item { float: left; width: 40px; min-height: 250px; margin: 0; padding: 0; list-style-type: none; }
 .active { background-color: #ccc; }
+
+
+.products-grid li.item { position: relative; width: 40px; padding: 0; overflow: hidden; }
+
+.store-tab-img-small { float: left; width: 40px; overflow: hidden; }
+.store-tab-data { position: absolute; left: 60px; }
+.store-tab-data img { margin: 0 0 20px; }

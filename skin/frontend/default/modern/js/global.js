@@ -42,7 +42,7 @@ var Initialize = function($) {
 
         // since we have to set a new width to the clicked tab we need to
         // add the remaining width to the width of one single tab
-        var newWidth = singleWidth + combinedWidth;
+        var newWidth = 419;
 
 		// make the hovered tab recognisable by using an 'active' class
 		// which can be used to styling and interaction purposes
@@ -64,7 +64,7 @@ var Initialize = function($) {
             if($('.item').hasClass('expand')){
                 $(this).animate({
                     width: resize(singleWidth)+'px'
-                }, 1500, function(){
+                }, 1000, function(){
                     $('.item').removeClass('expand');
                 });
             };
@@ -72,7 +72,7 @@ var Initialize = function($) {
             if(!$('.item').hasClass('expand')){
                 $(this).animate({
                     width: resize(newWidth)+'px'
-                }, 1500, function(){
+                }, 1000, function(){
                     $(this).addClass('expand');
                 });
             };
