@@ -42,6 +42,7 @@ var Initialize = function($) {
 
         // since we have to set a new width to the clicked tab we need to
         // add the remaining width to the width of one single tab
+        // temp --> var newWidth = singleWidth + combinedWidth;
         var newWidth = 419;
 
 		// make the hovered tab recognisable by using an 'active' class

@@ -1,9 +1,14 @@
 .products-grid .item { float: left; width: 40px; min-height: 250px; margin: 0; padding: 0; list-style-type: none; }
-.active { background-color: #ccc; }
-
-
 .products-grid li.item { position: relative; width: 40px; padding: 0; overflow: hidden; }
+.products-grid .product-name { color: #5b9400; font-size: 1.6em; font-weight: bold; line-height: 1.25; }
 
 .store-tab-img-small { float: left; width: 40px; overflow: hidden; }
 .store-tab-data { position: absolute; left: 60px; }
 .store-tab-data img { margin: 0 0 20px; }
+.store-tab-data p { clear: both; }
+.store-attribute-wrap { float: left; margin: 0 0 20px; }
+
+.store-address { float: left; }
+.store-times { float: left; margin: 0 0 0 20px; }
+
+.products-grid .actions { position: static; }

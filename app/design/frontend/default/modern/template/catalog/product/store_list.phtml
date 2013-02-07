@@ -53,13 +53,11 @@ $_helper = $this->helper('catalog/output');
 
                 <img src="<?php echo $this->helper('catalog/image')->init($_store, 'small_image')->keepFrame(false)->resize(225, 359); ?>" height="225" width="359" alt="<?php echo $this->stripTags($this->getImageLabel($_store, 'small_image'), null, true) ?>" />
 
-                <h2 class="product-name"><a href="<?php echo $_store->getProductUrl() ?>" title="<?php echo $this->stripTags($_store->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_store, $_store->getName(), 'name') ?></a></h2>
-                <p>
-                    <?=$_store->getStoreAddress()?>
-                </p>
-                <p>
-                    <?=$_store->getStoreTimes()?>
-                </p>
+                <h2 class="product-name"><?php echo $_helper->productAttribute($_store, $_store->getName(), 'name') ?></h2>
+                <ul class="store-attribute-wrap">
+                    <li class="store-address"><?=$_store->getStoreAddress()?></li>
+                    <li class="store-times"><?=$_store->getStoreTimes()?></li>
+                </ul>
                 <p>
                     <?=$_store->getStoreSpecialTimes()?>
                 </p>
